@@ -1,0 +1,44 @@
+<resources>
+    <string name="app_name">Trash</string>
+    <string name="achivements">Achievements</string>
+    <string name="timetable">Timetable</string>
+    <string name="mygarden">My Garden</string>
+    <string name="info">bhd</string>
+    <string name="todo">TODO</string>
+    <string name="finish">Готово</string>
+    <string name="ChooseParametres">Выберите параметры</string>
+    <string-array name="mainmas">
+        <item>Картофель</item>
+        <item>Свекла</item>
+        <item>Морковь</item>
+        <item>Морковь</item>
+        <item>Морковь</item>
+        <item>Морковь</item>
+        <item>Морковь</item>
+        <item>Морковь</item>
+        <item>Морковь</item>
+        <item>Морковь</item>
+        <item>Морковь</item>
+        <item>Морковь</item>
+        <item>Морковь</item>
+        <item>Морковь</item>
+        <item>Морковь</item>
+        <item>Морковь</item>
+        <item>Морковь</item>
+        <item>Морковь</item>
+        <item>Морковь</item>
+        <item>Морковь</item>
+        <item>Морковь</item>
+        <item>Морковь</item>
+        <item>Морковь</item>
+        <item>Морковь</item>
+        <item>Морковь</item>
+        <item>Морковь</item>
+        <item>Морковь</item>
+        <item>Морковь</item>
+        <item>Морковь</item>
+        <item>Морковь</item>
+        <item>Морковь</item>
+        <item>Морковь</item>
+    </string-array>
+</resources>
