@@ -740,9 +740,6 @@ public class Information extends AppCompatActivity {
             ButtonTop.setVisibility(View.GONE);
             TextName.setText("");
         }
-
-
-
         if(cur.contains("Баку")){
             ButtonTop.setVisibility(View.GONE);
             TextName.setText("");

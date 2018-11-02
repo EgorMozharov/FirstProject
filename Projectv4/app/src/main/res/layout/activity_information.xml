@@ -11,7 +11,7 @@
         android:layout_width="303dp"
         android:layout_height="144dp"
         android:layout_marginTop="8dp"
-        android:text="Вы точно хотите добавить это место? Если джа, то нажмите добавить"
+        android:text="Вы точно хотите добавить это место? Если да, то нажмите добавить."
         android:textColor="#FFFFFF"
         android:textSize="23sp"
         app:layout_constraintBottom_toTopOf="parent"
