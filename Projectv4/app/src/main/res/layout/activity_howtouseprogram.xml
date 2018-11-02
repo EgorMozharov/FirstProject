@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".howtouseprogram">
+    tools:context="com.example.projectEasy.projectEasy.howtouseprogram">
 
     <TextView
         android:id="@+id/textView4"
@@ -30,7 +30,7 @@
         android:layout_marginEnd="8dp"
         android:layout_marginStart="8dp"
         android:layout_marginBottom="41dp"
-        android:text="- «Мои поездки» - при нажатии на эту кнопку открывается новое окно с ранее выбранными Вами поездками. При следующем нажатии на любую из них Вам откроется окно с краткой информацией о месте. Для удаления достаточно долго жать на город, и он исчезнет."
+        android:text="- «Мои поездки» - при нажатии на эту кнопку открывается новое окно с ранее выбранными Вами поездками. При следующем нажатии на любую из них Вам откроется окно с функцией добавить. Для удаления достаточно долго жать на город, и он исчезнет."
         app:layout_constraintBottom_toTopOf="@+id/textView6"
         app:layout_constraintEnd_toEndOf="parent"
         android:textColor="@color/colorAccent"

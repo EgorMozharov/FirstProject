@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".SRS_TestWindow">
+    tools:context="com.example.projectEasy.projectEasy.SRS_TestWindow">
 
     <ScrollView
         android:layout_width="match_parent"
@@ -25,10 +25,11 @@
                 android:text="Тип места(город, гора, водопад...)"
                 android:textAlignment="center" />
 
-            <ListView android:layout_weight="3"
+            <ListView
                 android:id="@+id/listView1"
                 android:layout_width="match_parent"
-                android:layout_height="200dp"
+                android:layout_height="400dp"
+                android:layout_weight="3"
                 android:choiceMode="multipleChoice"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintLeft_toLeftOf="parent"
@@ -50,7 +51,7 @@
             <ListView
                 android:id="@+id/listView2"
                 android:layout_width="match_parent"
-                android:layout_height="200dp"
+                android:layout_height="250dp"
                 android:choiceMode="multipleChoice"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintLeft_toLeftOf="parent"
@@ -70,7 +71,7 @@
             <ListView
                 android:id="@+id/listView3"
                 android:layout_width="match_parent"
-                android:layout_height="200dp"
+                android:layout_height="7750dp"
                 android:choiceMode="multipleChoice"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintLeft_toLeftOf="parent"
@@ -90,32 +91,13 @@
             <ListView
                 android:id="@+id/listView4"
                 android:layout_width="match_parent"
-                android:layout_height="200dp"
+                android:layout_height="450dp"
                 android:choiceMode="multipleChoice"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintLeft_toLeftOf="parent"
                 app:layout_constraintRight_toRightOf="parent"
                 app:layout_constraintTop_toTopOf="parent"
                 app:layout_constraintVertical_bias="0.8" />
-
-            <TextView
-                android:id="@+id/textView14"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:fontFamily="@font/robotoslab_regular"
-                android:text="Средняя стоимость поездки "
-                android:textAlignment="center" />
-
-            <ListView
-                android:id="@+id/listView5"
-                android:layout_width="match_parent"
-                android:layout_height="200dp"
-                app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintLeft_toLeftOf="parent"
-                app:layout_constraintRight_toRightOf="parent"
-                app:layout_constraintTop_toTopOf="parent"
-                app:layout_constraintVertical_bias="1" />
 
             <Button
                 android:id="@+id/button"

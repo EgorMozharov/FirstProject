@@ -4,45 +4,35 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Information">
+    tools:context="com.example.projectEasy.projectEasy.Information">
 
     <TextView
         android:id="@+id/TextView"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="303dp"
+        android:layout_height="144dp"
         android:layout_marginTop="8dp"
-        android:text="Информация о месте"
+        android:text="Вы точно хотите добавить это место? Если джа, то нажмите добавить"
         android:textColor="#FFFFFF"
         android:textSize="23sp"
         app:layout_constraintBottom_toTopOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.506"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0" />
+        app:layout_constraintVertical_bias="0.125" />
 
     <TextView
         android:id="@+id/TextView2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="TEST2"
+        android:layout_width="369dp"
+        android:layout_height="55dp"
         android:textColor="#FFFFFF"
-        android:textSize="20sp"
+        android:textSize="12sp"
         app:layout_constraintBottom_toTopOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.049"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="parent"
-        app:layout_constraintVertical_bias="0.205" />
-
-    <ImageView
-        android:id="@+id/ImageMid"
-        android:layout_width="100dp"
-        android:layout_height="100dp"
-        app:layout_constraintBottom_toTopOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="parent"
-        app:layout_constraintVertical_bias="0.383" />
+        app:layout_constraintVertical_bias="0.516" />
 
     <Button
         android:id="@+id/ButtonBottom"

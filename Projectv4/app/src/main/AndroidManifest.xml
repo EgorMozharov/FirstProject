@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.example.ss.deadlineslul">
+    package="com.example.projectEasy.projectEasy">
 
     <application
         android:allowBackup="true"
@@ -9,18 +9,18 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".MainActivity">
+        <activity android:name="com.example.projectEasy.projectEasy.MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".Database" />
-        <activity android:name=".Information" />
-        <activity android:name=".SRS_TestWindow" />
-        <activity android:name=".programinfo" />
-        <activity android:name=".howtouseprogram"></activity>
+        <activity android:name="com.example.projectEasy.projectEasy.Database" />
+        <activity android:name="com.example.projectEasy.projectEasy.Information" />
+        <activity android:name="com.example.projectEasy.projectEasy.SRS_TestWindow" />
+        <activity android:name="com.example.projectEasy.projectEasy.programinfo" />
+        <activity android:name="com.example.projectEasy.projectEasy.howtouseprogram"></activity>
     </application>
 
 </manifest>
