@@ -17,17 +17,10 @@
             </intent-filter>
         </activity>
         <activity android:name=".Database" />
-        <activity android:name=".MyGarden" />
-        <activity android:name=".Achivements" />
         <activity android:name=".Information" />
-        <activity android:name=".Settings" />
-        <activity android:name=".Dialog" />
-        <activity android:name=".DialogMain" />
-        <activity android:name=".MyGarden_2" />
-        <activity android:name=".DialogMain_2" />
-        <activity android:name=".ComingSoon" />
-        <activity android:name=".TestAdapter" />
-        <activity android:name=".Spravka"></activity>
+        <activity android:name=".SRS_TestWindow" />
+        <activity android:name=".programinfo" />
+        <activity android:name=".howtouseprogram"></activity>
     </application>
 
 </manifest>

@@ -6,91 +6,49 @@ import android.content.SharedPreferences;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
-import android.widget.AdapterView;
-import android.widget.ArrayAdapter;
-import android.widget.ListView;
+import android.widget.Button;
+import android.widget.ImageView;
+import android.widget.TextView;
 
 import java.io.FileInputStream;
 import java.io.FileOutputStream;
 import java.io.IOException;
-import java.util.ArrayList;
-import java.util.List;
 
-public class Database extends AppCompatActivity {
-    List<String> main=new ArrayList<>();
+public class Information extends AppCompatActivity {
+
+    String cur;
+    String currency;
 
     @Override
-
-
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_database);
-
+        setContentView(R.layout.activity_information);
         checkFirstStart();
+        Intent intent=getIntent();
+        TextView TextName = findViewById(R.id.TextView);
+        ImageView ImageMain = findViewById(R.id.ImageMid);
+        Button ButtonTop = findViewById(R.id.ButtonTop);
+        Button ButtonBottom = findViewById(R.id.ButtonBottom);
+        String search=openText();
 
-        ListView lvMain=findViewById(R.id.lvMain);
-        String str=openText();
-        String buffer="";
-        char[] chArray=str.toCharArray();
-        for(int i=0;i<str.length();i++){
-            if(chArray[i]=='('){
-                i++;
-                while(chArray[i]!=')'){
-                    buffer+=chArray[i];
-                    i++;
-                }
-                main.add(buffer);
-                buffer="";
-            }
+        cur=intent.getStringExtra("Name");
+        if(search.contains(cur)){
+            ButtonTop.setVisibility(View.GONE);
         }
-        ArrayAdapter<String> adapter2;
-        adapter2 = new ArrayAdapter<String>(this, android.R.layout.simple_list_item_1,main);
-        lvMain.setAdapter(adapter2);
-        lvMain.setOnItemLongClickListener(new AdapterView.OnItemLongClickListener() {
+        currency=intent.getStringExtra("Currency");
+        if(currency.contains("Mine")){
+            ButtonTop.setVisibility(View.GONE);
+        }
+        if(cur.contains("Город 1")){
+            ButtonTop.setVisibility(View.GONE);
+            TextName.setText(cur);
+        }
 
-            @Override
-            public boolean onItemLongClick(AdapterView<?> parent, View view,
-                                           int position, long id) {
-                String str=main.get(position);
-                String all=openText();
-                char[] chArray=all.toCharArray();
-                int index=all.indexOf(str);
-                index--;
-                String buf1="";
-                for(int i=0;i<index;i++){
-                    buf1+=chArray[i];
-                }
-                String buf2="";
-                while(chArray[index]!=')'){
-                    index++;
-                }
-                index++;
-                for(int i=index;i<all.length();i++){
-                    buf2+=chArray[i];
-                }
-                String answer=buf1+buf2;
-                saveText(answer);
-                Intent intent=new Intent(Database.this,Database.class);
-                startActivity(intent);
-                finish();
-                return true;
-            }
-        });
-        lvMain.setOnItemClickListener(new AdapterView.OnItemClickListener() {
-            @Override
-            public void onItemClick(AdapterView<?> parent, View itemClicked, int position,
-                                    long id) {
 
-                Intent intent = new Intent(Database.this,Information.class);
-                intent.putExtra("Name",main.get(position));
-                intent.putExtra("Currency","Mine");
-                startActivity(intent);
-            }
-        });
     }
 
-
     private void checkFirstStart() {
+
         SharedPreferences sp = getSharedPreferences("hasVisited",
                 Context.MODE_PRIVATE);
         // проверяем, первый ли раз открывается программа (Если вход первый то вернет false)
@@ -111,8 +69,20 @@ public class Database extends AppCompatActivity {
     }
 
 
-    private final static String FILE_NAME = "content4.txt";
+    public void Save(View view){
+        String DB=openText();
+        DB+="("+cur+")";
+        saveText(DB);
+        Button ButtonTop = findViewById(R.id.ButtonTop);
+        ButtonTop.setVisibility(View.GONE);
+    }
 
+    public void OpenMenu(View view) {
+        Intent intent = new Intent(Information.this, MainActivity.class);
+        startActivity(intent);
+    }
+
+    private final static String FILE_NAME = "content4.txt";
 
     public String openText(){
 
@@ -142,7 +112,6 @@ public class Database extends AppCompatActivity {
         }
     }
 
-
     public void saveText(String obmen){
         FileOutputStream fos = null;
         try {
@@ -164,5 +133,4 @@ public class Database extends AppCompatActivity {
             }
         }
     }
-
 }

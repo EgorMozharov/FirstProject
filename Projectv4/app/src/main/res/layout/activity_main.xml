@@ -4,62 +4,78 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/backgroundtree"
+    android:background="@color/colorPrimary"
     tools:context="com.example.ss.deadlineslul.MainActivity">
 
 
     <Button
-        android:layout_width="300dp"
-        android:layout_height="75dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
         android:background="@drawable/button_bg_round_corners"
+        android:fontFamily="@font/robotoslab_regular"
         android:onClick="Click1"
         android:text="ВыбратьПоездку"
-        android:textColor="#000000"
+        android:textColor="@color/colorAccent"
         android:textSize="30sp"
         app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.42" />
+        app:layout_constraintVertical_bias="0.283" />
 
 
     <Button
-        android:layout_width="300dp"
-        android:layout_height="75dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
         android:background="@drawable/button_bg_round_corners"
-        android:onClick="Click3"
-        android:text="Достижения"
-        android:textColor="#000000"
+        android:fontFamily="@font/robotoslab_regular"
+        android:onClick="Click2"
+        android:text="Мои поездки"
+        android:textColor="@color/colorAccent"
         android:textSize="30sp"
         app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.7" />
+        app:layout_constraintVertical_bias="0.462" />
 
-    <TextView
-        android:id="@+id/textView4"
-        android:layout_width="293dp"
-        android:layout_height="73dp"
-        android:text="Приложение для путешествия"
-        android:visibility="visible"
-        app:layout_constraintBottom_toTopOf="@+id/imageView3"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.505"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.0" />
-
-    <ImageView
-        android:id="@+id/imageView3"
-        android:layout_width="385dp"
-        android:layout_height="564dp"
-        android:layout_marginTop="3dp"
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        android:background="@drawable/button_bg_round_corners"
+        android:fontFamily="@font/robotoslab_regular"
+        android:onClick="Click3"
+        android:text="О программе"
+        android:textColor="@color/colorAccent"
+        android:textSize="30sp"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@android:color/background_light" />
+        app:layout_constraintVertical_bias="0.649" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        android:background="@drawable/button_bg_round_corners"
+        android:fontFamily="@font/robotoslab_regular"
+        android:onClick="Click4"
+        android:text="Как пользоваться приложением"
+        android:textColor="@color/colorAccent"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.866" />
 
 
 </android.support.constraint.ConstraintLayout>
