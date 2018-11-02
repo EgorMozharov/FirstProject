@@ -45,21 +45,6 @@
         app:layout_constraintVertical_bias="0.383" />
 
     <Button
-        android:id="@+id/ButtonTop"
-        android:layout_width="158dp"
-        android:layout_height="54dp"
-        android:background="@drawable/button_bg_round_corners"
-        android:onClick="Save"
-        android:text="Добавить"
-        android:textSize="25sp"
-        app:layout_constraintBottom_toTopOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.9"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="parent"
-        app:layout_constraintVertical_bias="0.832" />
-
-    <Button
         android:id="@+id/ButtonBottom"
         android:layout_width="363dp"
         android:layout_height="58dp"
@@ -73,19 +58,50 @@
         app:layout_constraintTop_toBottomOf="parent"
         app:layout_constraintVertical_bias="0.974" />
 
-    <Button
-        android:id="@+id/ButtonTravel"
-        android:layout_width="150dp"
-        android:layout_height="54dp"
-        android:background="@drawable/button_bg_round_corners"
-        android:onClick="OpenTravel"
-        android:text="Поездки"
-        android:textSize="25sp"
-        app:layout_constraintBottom_toTopOf="parent"
+    <LinearLayout
+        android:layout_width="368dp"
+        android:layout_height="61dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toTopOf="@+id/ButtonBottom"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.1"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="parent"
-        app:layout_constraintVertical_bias="0.835" />
+        app:layout_constraintStart_toStartOf="parent">
+
+        <Button
+            android:id="@+id/ButtonTravel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/button_bg_round_corners"
+            android:onClick="OpenTravel"
+            android:text="Поездки"
+            android:layout_margin="4dp"
+            android:textSize="25sp"
+            app:layout_constraintBottom_toTopOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.235"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="parent"
+            app:layout_constraintVertical_bias="0.55" />
+
+        <Button
+            android:id="@+id/ButtonTop"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/button_bg_round_corners"
+            android:onClick="Save"
+            android:text="Добавить"
+            android:layout_margin="4dp"
+            android:textSize="25sp"
+            app:layout_constraintBottom_toTopOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.9"
+            app:layout_constraintStart_toEndOf="@+id/ButtonTravel"
+            app:layout_constraintTop_toBottomOf="parent"
+            app:layout_constraintVertical_bias="0.832" />
+    </LinearLayout>
 
 </android.support.constraint.ConstraintLayout>
