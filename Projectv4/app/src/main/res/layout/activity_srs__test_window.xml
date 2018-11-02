@@ -15,14 +15,15 @@
             android:layout_height="wrap_content"
             android:orientation="vertical"
             android:weightSum="33">
-            
+
             <TextView
                 android:id="@+id/textView11"
-                android:textAlignment="center"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:layout_weight="1"
                 android:fontFamily="@font/robotoslab_regular"
-                android:text="TextView" android:layout_weight="1" />
+                android:text="Тип места(город, гора, водопад...)"
+                android:textAlignment="center" />
 
             <ListView android:layout_weight="3"
                 android:id="@+id/listView1"
@@ -39,11 +40,12 @@
 
             <TextView
                 android:id="@+id/textView9"
-                android:textAlignment="center"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:layout_weight="1"
                 android:fontFamily="@font/robotoslab_regular"
-                android:text="TextView" android:layout_weight="1" />
+                android:text="Континент"
+                android:textAlignment="center" />
 
             <ListView
                 android:id="@+id/listView2"
@@ -58,11 +60,12 @@
 
             <TextView
                 android:id="@+id/textView15"
-                android:textAlignment="center"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:layout_weight="1"
                 android:fontFamily="@font/robotoslab_regular"
-                android:text="TextView" android:layout_weight="1" />
+                android:text="Страна"
+                android:textAlignment="center" />
 
             <ListView
                 android:id="@+id/listView3"
@@ -77,11 +80,12 @@
 
             <TextView
                 android:id="@+id/textView16"
-                android:textAlignment="center"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:layout_weight="1"
                 android:fontFamily="@font/robotoslab_regular"
-                android:text="TextView" android:layout_weight="1" />
+                android:text="Тип отдыха"
+                android:textAlignment="center" />
 
             <ListView
                 android:id="@+id/listView4"
@@ -96,11 +100,12 @@
 
             <TextView
                 android:id="@+id/textView14"
-                android:textAlignment="center"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:layout_weight="1"
                 android:fontFamily="@font/robotoslab_regular"
-                android:text="TextView" android:layout_weight="1" />
+                android:text="Средняя стоимость поездки "
+                android:textAlignment="center" />
 
             <ListView
                 android:id="@+id/listView5"
@@ -112,57 +117,19 @@
                 app:layout_constraintTop_toTopOf="parent"
                 app:layout_constraintVertical_bias="1" />
 
-            <TextView
-                android:id="@+id/textView13"
-                android:textAlignment="center"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:fontFamily="@font/robotoslab_regular"
-                android:text="TextView" android:layout_weight="1" />
-
-            <ListView
-                android:id="@+id/listView6"
-                android:layout_width="match_parent"
-                android:layout_height="200dp"
-                android:choiceMode="multipleChoice"
-                app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintLeft_toLeftOf="parent"
-                app:layout_constraintRight_toRightOf="parent"
-                app:layout_constraintTop_toTopOf="parent"
-                app:layout_constraintVertical_bias="0.5" />
-
-            <TextView
-                android:id="@+id/textView12"
-                android:textAlignment="center"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:fontFamily="@font/robotoslab_regular"
-                android:text="TextView" android:layout_weight="1" />
-
-            <ListView
-                android:id="@+id/listView7"
-                android:layout_width="match_parent"
-                android:layout_height="200dp"
-                android:choiceMode="multipleChoice"
-                app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintLeft_toLeftOf="parent"
-                app:layout_constraintRight_toRightOf="parent"
-                app:layout_constraintTop_toTopOf="parent"
-                app:layout_constraintVertical_bias="0.7" />
-
             <Button
                 android:id="@+id/button"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:onClick="SRS"
-                android:text="Check"
+                android:layout_weight="2"
                 android:background="@drawable/button_bg_round_corners"
+                android:onClick="SRS"
+                android:text="Найти"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintLeft_toLeftOf="parent"
                 app:layout_constraintRight_toRightOf="parent"
                 app:layout_constraintTop_toTopOf="parent"
-                app:layout_constraintVertical_bias="0.1"
-                android:layout_weight="2"/>
+                app:layout_constraintVertical_bias="0.1" />
 
             <ListView
                 android:id="@+id/lvMain"

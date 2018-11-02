@@ -89,6 +89,10 @@ public class Database extends AppCompatActivity {
         });
     }
 
+    public void ClickMain(View view) {
+        Intent intent = new Intent(Database.this, MainActivity.class);
+        startActivity(intent);
+    }
 
     private void checkFirstStart() {
         SharedPreferences sp = getSharedPreferences("hasVisited",
@@ -164,5 +168,4 @@ public class Database extends AppCompatActivity {
             }
         }
     }
-
 }

@@ -38,6 +38,7 @@ public class Information extends AppCompatActivity {
         currency=intent.getStringExtra("Currency");
         if(currency.contains("Mine")){
             ButtonTop.setVisibility(View.GONE);
+            ButtonBottom.setVisibility(View.GONE);
         }
         if(cur.contains("Город 1")){
             ButtonTop.setVisibility(View.GONE);
@@ -74,12 +75,19 @@ public class Information extends AppCompatActivity {
         DB+="("+cur+")";
         saveText(DB);
         Button ButtonTop = findViewById(R.id.ButtonTop);
-        ButtonTop.setVisibility(View.GONE);
+        Intent intent = new Intent(Information.this, Database.class);
+        startActivity(intent);
     }
 
     public void OpenMenu(View view) {
         Intent intent = new Intent(Information.this, MainActivity.class);
         startActivity(intent);
+    }
+
+
+    public void OpenTravel(View view) {
+        Intent intent1 = new Intent(Information.this, Database.class);
+        startActivity(intent1);
     }
 
     private final static String FILE_NAME = "content4.txt";

@@ -42,36 +42,50 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="parent"
-        app:layout_constraintVertical_bias="0.712" />
+        app:layout_constraintVertical_bias="0.383" />
 
     <Button
         android:id="@+id/ButtonTop"
         android:layout_width="158dp"
         android:layout_height="54dp"
         android:background="@drawable/button_bg_round_corners"
-        android:text="Добавить"
         android:onClick="Save"
+        android:text="Добавить"
         android:textSize="25sp"
         app:layout_constraintBottom_toTopOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.9"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="parent"
-        app:layout_constraintVertical_bias="0.9" />
+        app:layout_constraintVertical_bias="0.832" />
 
     <Button
         android:id="@+id/ButtonBottom"
-        android:layout_width="150dp"
-        android:layout_height="54dp"
+        android:layout_width="363dp"
+        android:layout_height="58dp"
         android:background="@drawable/button_bg_round_corners"
         android:onClick="OpenMenu"
         android:text="Меню"
         android:textSize="25sp"
         app:layout_constraintBottom_toTopOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="parent"
+        app:layout_constraintVertical_bias="0.974" />
+
+    <Button
+        android:id="@+id/ButtonTravel"
+        android:layout_width="150dp"
+        android:layout_height="54dp"
+        android:background="@drawable/button_bg_round_corners"
+        android:onClick="OpenTravel"
+        android:text="Поездки"
+        android:textSize="25sp"
+        app:layout_constraintBottom_toTopOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.1"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="parent"
-        app:layout_constraintVertical_bias="0.9" />
+        app:layout_constraintVertical_bias="0.835" />
 
 </android.support.constraint.ConstraintLayout>
