@@ -27,29 +27,40 @@ public class SRS_TestWindow extends AppCompatActivity {
     ListView choiceList5;
 
     String[] TypeOfPlace={"Город","Столица","ПаркРазвлечений","Горы","Каньоны","Водопад","Озеро","Река","Остров"};
-
     String[] Continent={"Азия","Антарктида","Африка","Европа","СевернаяАмерика","ЮжнаяАмерика", "Австралия"};
-
-    String[] Country={"Австрия","Бельгия","Великобритания","Германия","Ирландия","Лихтенштейн","Люксембург","Монако","Нидерланды",
-            "Франция","Швейцария","Белоруссия","Болгария","Венгрия","Молдавия","Польша","Россия","Румыния","Словакия","Украина",
-            "Чехия","Дания","Исландия","Норвегия","Латвия","Литва","Финляндия","Швеция","Эстония","Албания","Ватикан","Греция","Испания"
-            ,"Италия","Македония","Мальта","Португалия","Сербия","Словения","Хорватия","Черногория","Азербайджан","Армения","Грузия","Израиль","Иордания",
-            "Ирак","Иран","Кипр","Ливан","ОбъединённыеАрабскиеЭмираты","СаудовскаяАравия","Сирия","Турция","Казахстан","Киргизия","Таджикистан","Туркмения",
-            "Узбекистан","Афганистан","Бангладеш","Индия","Мальдивы","Пакистан","Шри-Ланка","Китай","СевернаяКорея","ЮжнаяКорея","Монголия"
-            ,"Япония","Вьетнам","Индонезия","Камбоджа","Малайзия","Сингапур","Таиланд","Филиппины","Палестина","Абхазия","Тайвань",
-            "Алжир","Ангола","Ботсвана","Габон","Бурунди","Гана","Гвинея","Египет","Замбия","Зимбабве","Кения","КанарскиеОстрова","Конго",
-            "Либерия","Лесото","Ливия","Мавритания","Мадагаскар","Малави","Мали","Марокко","Намибия","Нигер","Нигерия","Руанда"
-            ,"СахарскаяАрабскаяДемократическаяРеспублика","Сенегал","Свазиленд","Сомали","Судан","Танзания","Того","Тунис","Уганда","ЦАР",
-            "Чад","Эритрея","Эфиопия","Южно-АфриканскаяРеспублика","ЮжныйСудан","Австралия","Аргентина","Боливия","Бразилия","Венесуэла",
-            "Гайана","Колумбия","Парагвай","Перу","Суринам","Уругвай","Чили","Эквадор","БагамскиеОстрова",
-            "Барбадос","Белиз","Гаити","Гватемала","Гондурас", "Гренада","Доминика"
-            ,"ДоминиканскаяРеспублика","Канада","Коста-Рика","Куба","Мексика","Никарагуа","Панама","Сальвадор","Сент-Люсия",
-            "Сент-ВинсентГренадины","Сент-КитсНевис","СоединённыеШтатыАмерики","Ямайка","ТринидадТобаго"};
-
-    String[] TypeOfRest={"Семейный","Пляжный","Экскурсионный","Шопинг","Экстремальный","НочныеКлубы","Лечебный","Горнолыжный","Водный",""};
-
+    String[] Country={
+            "Австрия","Бельгия","Великобритания","Германия","Ирландия","Лихтенштейн","Люксембург","Монако","Нидерланды", "Франция","Швейцария","Белоруссия","Болгария","Венгрия","Молдавия","Польша","Россия","Румыния","Словакия","Украина", "Чехия","Дания","Исландия","Норвегия","Латвия","Литва","Финляндия","Швеция","Эстония","Албания","Ватикан","Греция","Испания","Италия","Македония","Мальта","Португалия","Сербия","Словения","Хорватия","Черногория",
+            "Азербайджан","Армения","Грузия","Израиль","Иордания", "Ирак","Иран","Кипр","Ливан","ОбъединённыеАрабскиеЭмираты","СаудовскаяАравия","Сирия","Турция","Казахстан","Киргизия","Таджикистан","Туркмения","Узбекистан","Афганистан","Бангладеш","Индия","Мальдивы","Пакистан","Шри-Ланка","Китай","СевернаяКорея","ЮжнаяКорея","Монголия","Япония","Вьетнам","Индонезия","Камбоджа","Малайзия","Сингапур","Таиланд","Филиппины", "Палестина","Абхазия","Тайвань",
+            "Алжир","Ангола","Ботсвана","Габон","Бурунди","Гана","Гвинея","Египет","Замбия","Зимбабве","Кения","КанарскиеОстрова","Конго", "Либерия","Лесото","Ливия","Мавритания","Мадагаскар","Малави","Мали","Марокко","Намибия","Нигер","Нигерия","Руанда","СахарскаяАрабскаяДемократическаяРеспублика","Сенегал","Свазиленд","Сомали","Судан","Танзания","Того","Тунис","Уганда","ЦАР", "Чад","Эритрея","Эфиопия","Южно-АфриканскаяРеспублика","ЮжныйСудан",
+            "Австралия",
+            "Аргентина","Боливия","Бразилия","Венесуэла","Гайана","Колумбия","Парагвай","Перу","Суринам","Уругвай","Чили","Эквадор",
+            "БагамскиеОстрова", "Барбадос","Белиз","Гаити","Гватемала","Гондурас", "Гренада","Доминика","ДоминиканскаяРеспублика","Канада","Коста-Рика","Куба","Мексика","Никарагуа","Панама","Сальвадор","Сент-Люсия", "Сент-ВинсентГренадины","Сент-КитсНевис","СоединённыеШтатыАмерики","Ямайка","ТринидадТобаго"
+    };
+    String[] TypeOfRest={"Семейный","Пляжный","Экскурсионный","Шопинг","Экстремальный","НочныеКлубы","Лечебный","Горнолыжный","Водный"};
+    //String[] TypeOfRest2={"Семейный","Пляжный","Экскурсионный","Шопинг","Экстремальный","НочныеКлубы","Лечебный","Горнолыжный","Водный"};
+    //String[] TypeOfRest3={"Семейный","Пляжный","Экскурсионный","Шопинг","Экстремальный","НочныеКлубы","Лечебный","Горнолыжный","Водный"};
     String[] AverageTripCost={"1","2","3","4"};
 
+    public String[] Names={
+            "SixFlagsMagicMountain","ПортАвентура","Эверлэнд","БлэкпулПлежеБич","Леголенд","ДиснейлендПариж","ДиснейлендКалифорния","Европа-парк","Диснейуорлд","МирБетоКарреро","ДиснейлендСША","ДискавериКов",
+            "НиагарскийВодопад","ВодопадГюдльфосс","ВодопадыДюден","ВодопадУчан-Су","водопадыИгуасу","Анхель","ВодопадКхон","ВодопадДжог","ВодопадШифен","ВодопадВиктория","Лангфоссен","ВеликиСлапВодопад","ГоктаВодопад","ВодопадРайхенбах","ВодопадДэтянь","МардалсфоссенВодопад","Сент-КлерВодопад","ГлоткаБаатарыВодопад","ВодопадЙосемити","РейнскийВодопад","ВодопадЭраван","ВодопадТугела",
+            "ЧарынскийКаньон","КаньонВаймеа","КаньонКолка","КаньонРекиБлайд","ГленКаньон","КаньонАнтилопы","Гранд-Каньон",
+            "Маттерхорн","ВулканОрисаба","Эльбрус","АйлендПик","Аконкагуа","Котопахи","Рейнир","Монблан","Килиманджаро","Кала-Патхар","Тибет","Аннапурна","Канченджанга","НангаПарбат","Монблан","Маттерхорн","Эйгер","БроудПик","Гашербрум","Эверест",
+            "Мадейра","Майорка","Канары","Кабо-Верде","Мадагаскар","Мальдивы","Шри-Ланка","Самун","Пхукет","Ко-Чанг","Самет","Бали","Борнео","КомодскиеОстрова","Джерба","Фиджи","Бора-Бора","Доминикана","Вануату","Гавайи","Багамы","Мариета","Сейшелы","Маврикий","Куба","Ямайка","Мальта","Кипр","Сардиния","Крит","ОстровПасхи",
+            "Байкал","Комо","Тахо","Тегернзее","Иссык-Куль","Вольфгангзее","Балатон","ЖеневскоеОзеро","Лох-Несс","Гарда","Лугано","Пяйянне",
+            "Франклин","Терек","Китой","Пис","Чулышман","Замбези","Тумча","Колорадо","Прут","Снежная","Нил","Арагви","Футалеуфу","Кору","Алсек","Ганг","Непал","Ноче","Пакуаре","Янцзы","Брахмапутра","Кутсайоки","Катунь","ЮжныйБуг","Карпаты",
+            "Вена","Брюссель","Лондон","Берлин","Дублин","Вадуц","Люксембург","Монако","Амстердам","Париж","Берн","Минск","София","Будапешт","Кишинёв","Варшава","Москва","Бухарест","Братислава","Киев","Прага","Копенгаген","Рейкьявик","Осло","Рига","Вильнюс","Хельсинки","Стокгольм","Таллин","Тирана","Андорра-ла-Велья","Сараево","Ватикан","Афины","Мадрид","Рим","Скопье","Валлетта","Лиссабон","Сан-Марино","Белград","Любляна","Загреб","Подгорица",
+            "Баку","Ереван","Манама","Тбилиси","Иерусалим","Амман","Багдад","Тегеран","Сана","Доха","Никосия","Эль-Кувейт","Бейрут","Абу-Даби","Маскат","Эр-Рияд","Дамаск","Анкара","Астана","Бишкек","Душанбе","Ашхабад", "Ташкент","Кабул","Дакка","Тхимпху","Нью-Дели","Мале","Катманду","Исламабад","Шри-Джаяварденепура-Котте","Пекин","Пхеньян","Сеул","Улан-Батор","Токио","Москва","Бандар-Сери-Бегаван","Ханой","Джакарта","Пномпень","Вьентьян","Куала-Лумпур","Нейпьидо", "Сингапур","Бангкок","Дили","Манила",
+            "Алжир","Луанда","Порто-Ново","Котону","Габороне","Уагадугу","Бужумбура","Либревиль","Банжул","Аккра","Конакри","Бисау","Джибути","Каир","Лусака","Хараре","Прая","Яунде", "Лас-ПальмасДеГран-Канария","Санта-КрузДеТенерифе","Найроби","Морони","Киншаса","Браззавиль","Ямусукро","Абиджан","Масеру","Монровия","Триполи","Порт-Луи","Нуакшот","Антананариву","Фуншал","Мамудзу","Лилонгве","Бамако","Рабат","Мапуту","Виндхук","Ниамей", "Абуджа","Сен-Дени","Кигали","Сан-Томе","Эль-Аюн","Тифарити","Мбабане","Лобамба","Джеймстаун","Виктория","Дакар","Сеута","Могадишо","Харгейса","Хартум","Фритаун","Дар-эс-Салам","Додома","Ломе","Тунис","Кампала","Банги", "Нджамена","Малабо","Асмэра","Аддис-Абеба","Кейптаун","Претория","Блумфонтейн","Джуба",
+            "Буэнос-Айрес","Ла-Пас","Сукре","Бразилиа","Каракас","Джорджтаун","Санта-Фе-Де-Богота","Асунсьон","Лима","Парамарибо","Монтевидео","Сантьяго","Кито",
+            "Сент-Джонс","Нассау","Бриджтаун","Бельмопан","Порт-о-Пренс","Гватемала","Тегусигальпа","Сент-Джорджес","Розо","Санто-Доминго","Оттава","Сан-Хосе","Гавана","Мехико","Манагуа","Панама","Сан-Сальвадор","Кастри","Кингстаун","Бастер","Вашингтон","Порт-оф-Спейн","Кингстон",
+            "Австралия",
+            "","","","","","","","","","","","","","","","","","","","","",
+            "","","","","","","","","","","","","","","","","","","","","","",
+            "","","","","","","","","","","","","","","","","","","","","","",
+            "","","","","","","","","","","","","","","","","","","","","","",
+            "","","","","","","","","","","","","","","","","","","","","","",
+    };
 
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -90,32 +101,6 @@ public class SRS_TestWindow extends AppCompatActivity {
         choiceList5.setChoiceMode(ListView.CHOICE_MODE_MULTIPLE);
         choiceList5.setAdapter(ItsSoSad5);
     }
-
-
-    public String[] Names={
-            "SixFlagsMagicMountain","ПортАвентура","Эверлэнд","БлэкпулПлежеБич","Леголенд","ДиснейлендПариж","ДиснейлендКалифорния","Европа-парк","Диснейуорлд","МирБетоКарреро","ДиснейлендСША","ДискавериКов",
-            "НиагарскийВодопад","ВодопадГюдльфосс","ВодопадыДюден","ВодопадУчан-Су","водопадыИгуасу","Анхель","ВодопадКхон","ВодопадДжог","ВодопадШифен","ВодопадВиктория","Лангфоссен","ВеликиСлапВодопад","ГоктаВодопад","ВодопадРайхенбах","ВодопадДэтянь","МардалсфоссенВодопад","Сент-КлерВодопад","ГлоткаБаатарыВодопад","ВодопадЙосемити","РейнскийВодопад","ВодопадЭраван","Водопад Тугела",
-            "ЧарынскийКаньон","КаньонВаймеа","КаньонКолка","КаньонРекиБлайд","ГленКаньон","КаньонАнтилопы","Гранд-Каньон",
-            "Маттерхорн","ВулканОрисаба","Эльбрус","АйлендПик","Аконкагуа","Котопахи","Рейнир","Монблан","Килиманджаро","Кала-Патхар","Тибет","Аннапурна","Канченджанга","НангаПарбат","Монблан","Маттерхорн","Эйгер","Броуд Пик","Гашербрум","Эверест",
-            "Мадейра","Майорка","Канары","Кабо-Верде","Мадагаскар","Мальдивы","Шри-Ланка","Самун","Пхукет","Ко-Чанг","Самет","Бали","Борнео","КомодскиеОстрова","Джерба","Фиджи","Бора-Бора","Доминикана","Вануату","Гавайи","Багамы","Мариета","Сейшелы","Маврикий","Куба","Ямайка","Мальта","Кипр","Сардиния","Крит","ОстровПасхи",
-            "Байкал","Комо","Тахо","Тегернзее","Иссык-Куль","Вольфгангзее","Балатон","ЖеневскоеОзеро","Лох-Несс","Гарда","Лугано","Пяйянне",
-            "Франклин","Терек","Китой","Пис","Чулышман","Замбези","Тумча","Колорадо","Прут","Снежная","Нил","Арагви","Футалеуфу","Кору","Алсек","Ганг","Непал","Ноче","Пакуаре","Янцзы","Брахмапутра","Кутсайоки","Катунь","ЮжныйБуг","Карпаты",
-            "","","","","","","","","","","","","","","","","","","","","","",
-            "","","","","","","","","","","","","","","","","","","","","","",
-            "","","","","","","","","","","","","","","","","","","","","","",
-            "","","","","","","","","","","","","","","","","","","","","","",
-            "","","","","","","","","","","","","","","","","","","","","","",
-            "","","","","","","","","","","","","","","","","","","","","","",
-            "","","","","","","","","","","","","","","","","","","","","","",
-            "","","","","","","","","","","","","","","","","","","","","","",
-            "","","","","","","","","","","","","","","","","","","","","","",
-            "","","","","","","","","","","","","","","","","","","","","","",
-            "","","","","","","","","","","","","","","","","","","","","","",
-            "","","","","","","","","","","","","","","","","","","","","","",
-            "","","","","","","","","","","","","","","","","","","","","","",
-            "","","","","","","","","","","","","","","","","","","","","","",
-
-    };
 
 
     public List<List<String> > Characters= new ArrayList<>();
@@ -263,6 +248,216 @@ public class SRS_TestWindow extends AppCompatActivity {
         Characters.add(getList("","","","",""));
         Characters.add(getList("","","","",""));
         Characters.add(getList("","","","",""));
+        //Столицы Европы
+        Characters.add(getList("","","","",""));
+        Characters.add(getList("","","","",""));
+        Characters.add(getList("","","","",""));
+        Characters.add(getList("","","","",""));
+        Characters.add(getList("","","","",""));
+        Characters.add(getList("","","","",""));
+        Characters.add(getList("","","","",""));
+        Characters.add(getList("","","","",""));
+        Characters.add(getList("","","","",""));
+        Characters.add(getList("","","","",""));
+        Characters.add(getList("","","","",""));
+        Characters.add(getList("","","","",""));
+        Characters.add(getList("","","","",""));
+        Characters.add(getList("","","","",""));
+        Characters.add(getList("","","","",""));
+        Characters.add(getList("","","","",""));
+        Characters.add(getList("","","","",""));
+        Characters.add(getList("","","","",""));
+        Characters.add(getList("","","","",""));
+        Characters.add(getList("","","","",""));
+        Characters.add(getList("","","","",""));
+        Characters.add(getList("","","","",""));
+        Characters.add(getList("","","","",""));
+        Characters.add(getList("","","","",""));
+        Characters.add(getList("","","","",""));
+        Characters.add(getList("","","","",""));
+        Characters.add(getList("","","","",""));
+        Characters.add(getList("","","","",""));
+        Characters.add(getList("","","","",""));
+        Characters.add(getList("","","","",""));
+        Characters.add(getList("","","","",""));
+        Characters.add(getList("","","","",""));
+        Characters.add(getList("","","","",""));
+        Characters.add(getList("","","","",""));
+        Characters.add(getList("","","","",""));
+        Characters.add(getList("","","","",""));
+        Characters.add(getList("","","","",""));
+        Characters.add(getList("","","","",""));
+        Characters.add(getList("","","","",""));
+        Characters.add(getList("","","","",""));
+        Characters.add(getList("","","","",""));
+        Characters.add(getList("","","","",""));
+        Characters.add(getList("","","","",""));
+        Characters.add(getList("","","","",""));
+        Characters.add(getList("","","","",""));
+        //Столицы Азии
+        Characters.add(getList("","","","",""));
+        Characters.add(getList("","","","",""));
+        Characters.add(getList("","","","",""));
+        Characters.add(getList("","","","",""));
+        Characters.add(getList("","","","",""));
+        Characters.add(getList("","","","",""));
+        Characters.add(getList("","","","",""));
+        Characters.add(getList("","","","",""));
+        Characters.add(getList("","","","",""));
+        Characters.add(getList("","","","",""));
+        Characters.add(getList("","","","",""));
+        Characters.add(getList("","","","",""));
+        Characters.add(getList("","","","",""));
+        Characters.add(getList("","","","",""));
+        Characters.add(getList("","","","",""));
+        Characters.add(getList("","","","",""));
+        Characters.add(getList("","","","",""));
+        Characters.add(getList("","","","",""));
+        Characters.add(getList("","","","",""));
+        Characters.add(getList("","","","",""));
+        Characters.add(getList("","","","",""));
+        Characters.add(getList("","","","",""));
+        Characters.add(getList("","","","",""));
+        Characters.add(getList("","","","",""));
+        Characters.add(getList("","","","",""));
+        Characters.add(getList("","","","",""));
+        Characters.add(getList("","","","",""));
+        Characters.add(getList("","","","",""));
+        Characters.add(getList("","","","",""));
+        Characters.add(getList("","","","",""));
+        Characters.add(getList("","","","",""));
+        Characters.add(getList("","","","",""));
+        Characters.add(getList("","","","",""));
+        Characters.add(getList("","","","",""));
+        Characters.add(getList("","","","",""));
+        Characters.add(getList("","","","",""));
+        Characters.add(getList("","","","",""));
+        Characters.add(getList("","","","",""));
+        Characters.add(getList("","","","",""));
+        Characters.add(getList("","","","",""));
+        Characters.add(getList("","","","",""));
+        Characters.add(getList("","","","",""));
+        Characters.add(getList("","","","",""));
+        Characters.add(getList("","","","",""));
+        Characters.add(getList("","","","",""));
+        Characters.add(getList("","","","",""));
+        Characters.add(getList("","","","",""));
+        Characters.add(getList("","","","",""));
+        Characters.add(getList("","","","",""));
+        //Столицы Африки
+        Characters.add(getList("","","","",""));
+        Characters.add(getList("","","","",""));
+        Characters.add(getList("","","","",""));
+        Characters.add(getList("","","","",""));
+        Characters.add(getList("","","","",""));
+        Characters.add(getList("","","","",""));
+        Characters.add(getList("","","","",""));
+        Characters.add(getList("","","","",""));
+        Characters.add(getList("","","","",""));
+        Characters.add(getList("","","","",""));
+        Characters.add(getList("","","","",""));
+        Characters.add(getList("","","","",""));
+        Characters.add(getList("","","","",""));
+        Characters.add(getList("","","","",""));
+        Characters.add(getList("","","","",""));
+        Characters.add(getList("","","","",""));
+        Characters.add(getList("","","","",""));
+        Characters.add(getList("","","","",""));
+        Characters.add(getList("","","","",""));
+        Characters.add(getList("","","","",""));
+        Characters.add(getList("","","","",""));
+        Characters.add(getList("","","","",""));
+        Characters.add(getList("","","","",""));
+        Characters.add(getList("","","","",""));
+        Characters.add(getList("","","","",""));
+        Characters.add(getList("","","","",""));
+        Characters.add(getList("","","","",""));
+        Characters.add(getList("","","","",""));
+        Characters.add(getList("","","","",""));
+        Characters.add(getList("","","","",""));
+        Characters.add(getList("","","","",""));
+        Characters.add(getList("","","","",""));
+        Characters.add(getList("","","","",""));
+        Characters.add(getList("","","","",""));
+        Characters.add(getList("","","","",""));
+        Characters.add(getList("","","","",""));
+        Characters.add(getList("","","","",""));
+        Characters.add(getList("","","","",""));
+        Characters.add(getList("","","","",""));
+        Characters.add(getList("","","","",""));
+        Characters.add(getList("","","","",""));
+        Characters.add(getList("","","","",""));
+        Characters.add(getList("","","","",""));
+        Characters.add(getList("","","","",""));
+        Characters.add(getList("","","","",""));
+        Characters.add(getList("","","","",""));
+        Characters.add(getList("","","","",""));
+        Characters.add(getList("","","","",""));
+        Characters.add(getList("","","","",""));
+        Characters.add(getList("","","","",""));
+        Characters.add(getList("","","","",""));
+        Characters.add(getList("","","","",""));
+        Characters.add(getList("","","","",""));
+        Characters.add(getList("","","","",""));
+        Characters.add(getList("","","","",""));
+        Characters.add(getList("","","","",""));
+        Characters.add(getList("","","","",""));
+        Characters.add(getList("","","","",""));
+        Characters.add(getList("","","","",""));
+        Characters.add(getList("","","","",""));
+        Characters.add(getList("","","","",""));
+        Characters.add(getList("","","","",""));
+        Characters.add(getList("","","","",""));
+        Characters.add(getList("","","","",""));
+        Characters.add(getList("","","","",""));
+        Characters.add(getList("","","","",""));
+        Characters.add(getList("","","","",""));
+        Characters.add(getList("","","","",""));
+        Characters.add(getList("","","","",""));
+        Characters.add(getList("","","","",""));
+        //Столицы Южной Америки
+        Characters.add(getList("","","","",""));
+        Characters.add(getList("","","","",""));
+        Characters.add(getList("","","","",""));
+        Characters.add(getList("","","","",""));
+        Characters.add(getList("","","","",""));
+        Characters.add(getList("","","","",""));
+        Characters.add(getList("","","","",""));
+        Characters.add(getList("","","","",""));
+        Characters.add(getList("","","","",""));
+        Characters.add(getList("","","","",""));
+        Characters.add(getList("","","","",""));
+        Characters.add(getList("","","","",""));
+        Characters.add(getList("","","","",""));
+        Characters.add(getList("","","","",""));
+        //Столицы Северной Америки
+        Characters.add(getList("","","","",""));
+        Characters.add(getList("","","","",""));
+        Characters.add(getList("","","","",""));
+        Characters.add(getList("","","","",""));
+        Characters.add(getList("","","","",""));
+        Characters.add(getList("","","","",""));
+        Characters.add(getList("","","","",""));
+        Characters.add(getList("","","","",""));
+        Characters.add(getList("","","","",""));
+        Characters.add(getList("","","","",""));
+        Characters.add(getList("","","","",""));
+        Characters.add(getList("","","","",""));
+        Characters.add(getList("","","","",""));
+        Characters.add(getList("","","","",""));
+        Characters.add(getList("","","","",""));
+        Characters.add(getList("","","","",""));
+        Characters.add(getList("","","","",""));
+        Characters.add(getList("","","","",""));
+        Characters.add(getList("","","","",""));
+        Characters.add(getList("","","","",""));
+        Characters.add(getList("","","","",""));
+        Characters.add(getList("","","","",""));
+        Characters.add(getList("","","","",""));
+        Characters.add(getList("","","","",""));
+        Characters.add(getList("","","","",""));
+        //Австралия
+        Characters.add(getList("","","","",""));
         //
         Characters.add(getList("","","","",""));
         Characters.add(getList("","","","",""));
@@ -298,178 +493,18 @@ public class SRS_TestWindow extends AppCompatActivity {
         Characters.add(getList("","","","",""));
         Characters.add(getList("","","","",""));
         Characters.add(getList("","","","",""));
-        Characters.add(getList("","","","",""));
-        Characters.add(getList("","","","",""));
-        Characters.add(getList("","","","",""));
-        Characters.add(getList("","","","",""));
-        Characters.add(getList("","","","",""));
-        Characters.add(getList("","","","",""));
-        Characters.add(getList("","","","",""));
-        Characters.add(getList("","","","",""));
-        Characters.add(getList("","","","",""));
-        Characters.add(getList("","","","",""));
-        Characters.add(getList("","","","",""));
-        Characters.add(getList("","","","",""));
-        Characters.add(getList("","","","",""));
-        Characters.add(getList("","","","",""));
-        Characters.add(getList("","","","",""));
-        Characters.add(getList("","","","",""));
-        Characters.add(getList("","","","",""));
-        Characters.add(getList("","","","",""));
-        Characters.add(getList("","","","",""));
-        Characters.add(getList("","","","",""));
-        Characters.add(getList("","","","",""));
-        Characters.add(getList("","","","",""));
-        Characters.add(getList("","","","",""));
-        Characters.add(getList("","","","",""));
-        Characters.add(getList("","","","",""));
-        Characters.add(getList("","","","",""));
-        Characters.add(getList("","","","",""));
-        Characters.add(getList("","","","",""));
-        Characters.add(getList("","","","",""));
-        Characters.add(getList("","","","",""));
-        Characters.add(getList("","","","",""));
-        Characters.add(getList("","","","",""));
-        Characters.add(getList("","","","",""));
-        Characters.add(getList("","","","",""));
-        Characters.add(getList("","","","",""));
-        Characters.add(getList("","","","",""));
-        Characters.add(getList("","","","",""));
-        Characters.add(getList("","","","",""));
-        Characters.add(getList("","","","",""));
-        Characters.add(getList("","","","",""));
-        Characters.add(getList("","","","",""));
-        Characters.add(getList("","","","",""));
-        Characters.add(getList("","","","",""));
-        Characters.add(getList("","","","",""));
-        Characters.add(getList("","","","",""));
-        Characters.add(getList("","","","",""));
-        Characters.add(getList("","","","",""));
-        Characters.add(getList("","","","",""));
-        Characters.add(getList("","","","",""));
-        Characters.add(getList("","","","",""));
-        Characters.add(getList("","","","",""));
-        Characters.add(getList("","","","",""));
-        Characters.add(getList("","","","",""));
-        Characters.add(getList("","","","",""));
-        Characters.add(getList("","","","",""));
-        Characters.add(getList("","","","",""));
-        Characters.add(getList("","","","",""));
-        Characters.add(getList("","","","",""));
-        Characters.add(getList("","","","",""));
-        Characters.add(getList("","","","",""));
-        Characters.add(getList("","","","",""));
-        Characters.add(getList("","","","",""));
-        Characters.add(getList("","","","",""));
-        Characters.add(getList("","","","",""));
-        Characters.add(getList("","","","",""));
-        Characters.add(getList("","","","",""));
-        Characters.add(getList("","","","",""));
-        Characters.add(getList("","","","",""));
-        Characters.add(getList("","","","",""));
-        Characters.add(getList("","","","",""));
-        Characters.add(getList("","","","",""));
-        Characters.add(getList("","","","",""));
-        Characters.add(getList("","","","",""));
-        Characters.add(getList("","","","",""));
-        Characters.add(getList("","","","",""));
-        Characters.add(getList("","","","",""));
-        Characters.add(getList("","","","",""));
-        Characters.add(getList("","","","",""));
-        Characters.add(getList("","","","",""));
-        Characters.add(getList("","","","",""));
-        Characters.add(getList("","","","",""));
-        Characters.add(getList("","","","",""));
-        Characters.add(getList("","","","",""));
-        Characters.add(getList("","","","",""));
-        Characters.add(getList("","","","",""));
-        Characters.add(getList("","","","",""));
-        Characters.add(getList("","","","",""));
-        Characters.add(getList("","","","",""));
-        Characters.add(getList("","","","",""));
-        Characters.add(getList("","","","",""));
-        Characters.add(getList("","","","",""));
-        Characters.add(getList("","","","",""));
-        Characters.add(getList("","","","",""));
-        Characters.add(getList("","","","",""));
-        Characters.add(getList("","","","",""));
-        Characters.add(getList("","","","",""));
-        Characters.add(getList("","","","",""));
-        Characters.add(getList("","","","",""));
-        Characters.add(getList("","","","",""));
-        Characters.add(getList("","","","",""));
-        Characters.add(getList("","","","",""));
-        Characters.add(getList("","","","",""));
-        Characters.add(getList("","","","",""));
-        Characters.add(getList("","","","",""));
-        Characters.add(getList("","","","",""));
-        Characters.add(getList("","","","",""));
-        Characters.add(getList("","","","",""));
-        Characters.add(getList("","","","",""));
-        Characters.add(getList("","","","",""));
-        Characters.add(getList("","","","",""));
-        Characters.add(getList("","","","",""));
-        Characters.add(getList("","","","",""));
-        Characters.add(getList("","","","",""));
-        Characters.add(getList("","","","",""));
-        Characters.add(getList("","","","",""));
-        Characters.add(getList("","","","",""));
-        Characters.add(getList("","","","",""));
-        Characters.add(getList("","","","",""));
-        Characters.add(getList("","","","",""));
-        Characters.add(getList("","","","",""));
-        Characters.add(getList("","","","",""));
-        Characters.add(getList("","","","",""));
-        Characters.add(getList("","","","",""));
-        Characters.add(getList("","","","",""));
-        Characters.add(getList("","","","",""));
-        Characters.add(getList("","","","",""));
-        Characters.add(getList("","","","",""));
-        Characters.add(getList("","","","",""));
-        Characters.add(getList("","","","",""));
-        Characters.add(getList("","","","",""));
-        Characters.add(getList("","","","",""));
-        Characters.add(getList("","","","",""));
-        Characters.add(getList("","","","",""));
-        Characters.add(getList("","","","",""));
-        Characters.add(getList("","","","",""));
-        Characters.add(getList("","","","",""));
-        Characters.add(getList("","","","",""));
-        Characters.add(getList("","","","",""));
-        Characters.add(getList("","","","",""));
-        Characters.add(getList("","","","",""));
-        Characters.add(getList("","","","",""));
-        Characters.add(getList("","","","",""));
-        Characters.add(getList("","","","",""));
-        Characters.add(getList("","","","",""));
-        Characters.add(getList("","","","",""));
-        Characters.add(getList("","","","",""));
-        Characters.add(getList("","","","",""));
-        Characters.add(getList("","","","",""));
-        Characters.add(getList("","","","",""));
-        Characters.add(getList("","","","",""));
-        Characters.add(getList("","","","",""));
-        Characters.add(getList("","","","",""));
-        Characters.add(getList("","","","",""));
-        Characters.add(getList("","","","",""));
-        Characters.add(getList("","","","",""));
-        Characters.add(getList("","","","",""));
-
-
-
-
 
     }
 
 
-    public List<String> getList(String chrfi, String chrse, String chrth,String chfou,String chfif){
+    public List<String> getList(String typeofplace, String continent, String country,String typeofrest,String averagetripcost){
         List<String> gtl=new ArrayList<>();
         gtl.clear();
-        gtl.add(chrfi);
-        gtl.add(chrse);
-        gtl.add(chrth);
-        gtl.add(chfou);
-        gtl.add(chfif);
+        gtl.add(typeofplace);
+        gtl.add(continent);
+        gtl.add(country);
+        gtl.add(typeofrest);
+        gtl.add(averagetripcost);
         return gtl;
     }
 
@@ -571,8 +606,6 @@ public class SRS_TestWindow extends AppCompatActivity {
             search2.add(Characters.get(i).get(2));
             search2.add(Characters.get(i).get(3));
             search2.add(Characters.get(i).get(4));
-            //search2.add(Characters.get(i).get(5));
-            //search2.add(Characters.get(i).get(6));
             counter=0;
             for(int j=0;j<5;j++){
                 if(search.get(j)==search2.get(j))
